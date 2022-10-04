@@ -1,0 +1,450 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    width: 70px;
+    border: 1px solid #007bff;
+    border-bottom: 0;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    border: 1px solid #007bff;
+    padding: 14px 20px;
+    transition: all .3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 120px 0;
+}
+
+.section-header {
+    margin-bottom: 75px;
+}
+
+.section-header h2 {
+    color: #333;
+    font-size: 1.9em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* Header */
+
+.main-header {
+    height: 70vh;
+    background-image: url(header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header .main-header-content {
+    text-align: center;
+}
+
+.main-header .main-header-content h1 {
+    font-size: 4.2em;
+    color: #007bff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-header .main-header-content p {
+    color: #333;
+    font-size: 1.3em;
+    margin: 40px 0;
+}
+
+.main-header .main-header-content p span {
+    color: #007bff;
+}
+
+
+/* MENU */
+
+.main-menu {
+    background-color: #007bff;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu-item a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: all .3;
+}
+
+.menu-item a:hover {
+    color: #007bff;
+    background-color: #fff;
+}
+
+
+/* ABOUT */
+.about {
+    text-align: center;
+}
+
+.about .about-img {
+    border-radius: 50%;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    color: #777;
+    line-height: 1.4;
+}
+
+
+
+
+/* PORTFOLIO */
+
+.portfolio {
+    background-color: #f2f1ed;
+}
+
+.portfolio-wraper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item  {
+    flex-basis: 25%;
+    height: 200px;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio-item h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 123, 255, 0.8);
+    margin: 0;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 3em;
+    opacity: 0;
+    transition: all .3;
+}
+
+.portfolio-item h3:hover {
+    opacity: 1;
+}
+
+
+/* SKILLS */
+
+.skill-bar {
+    text-align: center;
+    list-style: none;
+}
+
+.skill-bar ul {
+    display: inline;
+    list-style: none;
+}
+
+.bar {
+    background-color: #777;
+    display: block;
+    height: 10px;
+    border: 2px solid #007bff;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #007bff;
+
+}
+
+.bar span {
+    height: 10px;
+    float: left;
+    background-color: #007bff;
+
+}
+
+.skill-bar h4 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+
+.skill-bar button {
+    margin: 30px 0;
+    padding: 10px;
+    border: 1px solid #007bff;
+}
+
+.skill-bar button:hover {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.html {
+    width: 90%;
+    animation: html 2s;
+}
+
+.css {
+    width: 80%;
+    animation: css 2s;
+}
+
+.js {
+    width: 80%;
+    animation: js 2s;
+}
+
+.jq {
+    width: 60%;
+    animation: jq 2s;
+}
+
+.boots {
+    width: 70%;
+    animation: boots 2s;
+}
+
+.sass {
+    width: 70%;
+    animation: sass 2s;
+}
+
+.wordpress {
+    width: 70%;
+    animation: wordpress 2s;
+}
+
+.react {
+    width: 50%;
+    animation: react 2s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes jq {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes boots {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes sass {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes wordpress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-content h3 {
+    border: 2px solid #007bff;
+    border-radius: 3px;
+    flex-basis: 33%;
+    padding: 15px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all .3s;
+}
+
+.skills-content h3:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* EXP */
+
+.exp {
+    background-color: #f2f1ed;
+}
+
+.main-exp p {
+    border: 2px solid #007bff;
+    border-radius: 2px;
+    font-size: 2em;
+    color: #777;
+}
+
+.main-exp p:hover {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* INT */
+
+
+.int-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.int-content h3 {
+    border: 2px solid #333;
+    border-radius: 3px;
+    flex-basis: 30%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #777;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background-color: #f2f1ed;
+    margin: 0;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-content ul {
+    display: inline;
+    list-style: none;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.contact-content ul li {
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+}
+
+.contact-content ul li a {
+    text-decoration: none; 
+    color: #007bff;
+}
+
+/* FOOTER */ 
+footer {
+    background-color: #fff;
+    text-align: center;
+    color: #777;
+}

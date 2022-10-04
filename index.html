@@ -1,12 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RESUME</title>
+
+    <link rel="stylesheet" href="normalize.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Hello</h1>
+    <header class="main-header">
+        <div class="main-header-content">
+            <h1>Dominik Słomnicki</h1>
+            <hr>
+            <p>HTML <span>•</span> CSS <span>•</span> JavaScript</p>
+            <a href="#main-nav" class="btn">Dowiedz się więcej</a>
+        </div>
+    </header>
+
+
+    <nav id="main-nav" class="main-menu">
+        <ul>
+            <li class="menu-item"><a href="#about">O mnie</a></li>
+            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="menu-item"><a href="#skills">Umiejętności</a></li>
+            <li class="menu-item"><a href="#exp">Doświadczenie</a></li>
+            <li class="menu-item"><a href="#int">Zainteresowania</a></li>
+            <li class="menu-item"><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about">
+        <div class="container">
+            <header class="section-header">
+                <h2>O mnie</h2>
+                <hr>
+            </header>
+
+            <img src="" alt="" class="about-img">
+            <p>Jestem świeżo upieczonym technikiem inforamtykiem. Odbyłem parę praktyk i kursów. Teraz chciałym zdobyć doświadczenie i rozwijać się w interesujących kierunkach oraz dostać się na ciekawe stanowisko aby czerpać jak najwięcej wiedzy i umiejętności.</p>
+
+            <a href="#portfolio" class="btn">Moje portfolio</a>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <header class="section-header">
+                <h2>Portfolio</h2>
+                <hr>
+            </header>
+
+            <div class="portfolio-wrapper">
+                <a href="" class="portfolio-item">
+                    <img src="" alt="">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="" alt="">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="" alt="">
+                    <h3>Projekt</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <header class="section-header">
+                <h2>Umiejętności</h2>
+                <hr>
+            </header>
+            <div class="skill-bar">
+                <ul>
+                    <li class="skill-item">
+                        <h4>HTML</h4><span class="bar"><span class="html"></span></span>
+                    </li>
+                    <li class="skill-item">
+                        <h4>CSS</h4><span class="bar"><span class="css"></span></span>
+                    </li>
+                    <li class="skill-item">
+                        <h4>JavaScript</h4><span class="bar"><span class="js"></span></span>
+                    </li>
+                    <li class="skill-item">
+                        <h4>jQuery</h4><span class="bar"><span class="jq"></span></span>
+                    </li>
+                    <li class="skill-item">
+                        <h4>Bootstrap</h4><span class="bar"><span class="boots"></span></span>
+                    </li>
+                    <li class="skill-item">
+                        <h4>SASS</h4><span class="bar"><span class="sass"></span></span>
+                    </li>
+                    <li class="skill-item">
+                        <h4>Wordpress</h4><span class="bar"><span class="wordpress"></span></span>
+                    </li>
+                    <li class="skill-item">
+                        <h4>React</h4><span class="bar"><span class="react"></span></span>
+                    </li>
+                </ul>
+                <button onClick="history.go(0);">Refresh Skills</button>    
+                
+                <div class="skills-content">
+                    <h3>Język angielski na poziomie B2</h3>
+                    <h3>Zaangażowanie</h3>
+                    <h3>Odpowiedzialność</h3>
+                    <h3>Samodzielność</h3>
+                    <h3>Dobra organizacja pracy</h3>
+                    <h3>Komunikatywność</h3>
+                </div>
+        </div>
+    </section>
+
+    <section id="exp" class="exp">
+        <div class="container">
+            <header class="section-header">
+                <h2>Doświadczenie</h2>
+                <hr>
+            </header>
+            <div class="main-exp">
+                <p>KURS FRONT END DEVELOPER(GIT, HTML, CSS, JAVASCRIPT, JSDOM, JQUERY, AJAX, SASS, BOOTSTRAP) AKADEMIA108 - PAŹDZIERNIK-STYCZEŃ 2021/2022</p>
+                <p>PRAKTYKI W URZĘDZIE - PAŹDZIERNIK 2019</p>
+                <p>PRAKTYKI WE WŁOSZECH REGGIO EMILIA - PAŹDZIERNIK 2018</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="int" class="int">
+        <div class="container">
+            <header class="section-header">
+                <h2>Zainteresowania</h2>
+                <hr>
+            </header>
+            <div class="int-content">
+                <h3>Programowanie</h3>
+                <h3>Internet</h3>
+                <h3>Social media</h3>
+                <h3>Gry</h3>
+                <h3>Sport</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <header class="section-header">
+                <h2>Kontakt</h2>
+                <hr>
+            </header>
+            <div class="contact-content">
+                <ul>
+                    <li class="contact-item">dsomnicki@gmail.com</li>
+                    <li class="contact-item"><a href="">Linkedin</a></li>
+                    <li class="contact-item"><a href="">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Wyrażam zgodę na przetwarzanie moich danych osobowych przez w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko</p>
+    </footer>
+
+
+
+
+
+
+    
 </body>
 </html>
